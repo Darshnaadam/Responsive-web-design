@@ -13,8 +13,16 @@
     <p id="description">help us improve your learning experience</p>
     <form id="survey-form">
         <feildset>
-            <label>Enter your Name: <input id="name" type="text" required></label>
-        <feildset>
+            <label id="name-label">
+                Enter your Name: <input id="name" type="text" required placeholder="Name">
+            </label>
+
+            <label id="email-label">Enter your Email: <input id="email" required min="10" max="99" type="email"
+                    placeholder="Email"></label>
+
+            <label id="number-label">Enter your Age: <input id="number" type="number" min="17" max="23"
+                    placeholder="Age"></label>
+            <feildset>
     </form>
 </body>
 
