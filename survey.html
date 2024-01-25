@@ -10,9 +10,9 @@
 
 <body>
   <h1 id="title">Student Survey form</h1>
-  <p id="description">help us improve your learning experience</p>
+  <p id="description">Help us improve your learning experience</p>
   <form id="survey-form">
-    <feildset>
+    <fieldset>
       <label id="name-label">
         Enter your Name: <input id="name" type="text" required placeholder="Name">
       </label>
@@ -22,8 +22,7 @@
 
       <label id="number-label">Enter your Age: <input id="number" type="number" min="17" max="23"
           placeholder="Age"></label>
-      <feildset>
-        <feildset>
+
           <label>department:
             <select id="dropdown">
               <option value="">Select your department</option>
@@ -32,7 +31,7 @@
               <option value="3">BBA</option>
             </select>
           </label>
-        </feildset>
+    </fieldset>  
         <feildset>
           <legend>Are you satisfied with the teaching staff and their teaching methods?</legend>
 
@@ -40,34 +39,39 @@
           <label for="sat"><input id="sat" type="radio" name="s" value="satisfied">Satisfied</label>
           <label for="dsat"><input id="dsat" type="radio" name="ds" value="dissatisfied">Dissatisfied</label>
           <label for="vdsat"><input id="vdsat" type="radio" name="vds" value="very dissatisfied">Very dissatisfied</label>
-
+        </feildset>
+        <fieldset>
           <legend>
             Is it easy to obtain the necessary resources from the college library?
           </legend>
 
           <label for="yes"><input id="yes" type="radio" name="y" value="yes" value="yes">Yes</label>
           <label for="no"><input id="no" type="radio" name="n" value="no">No</label>
-
-          <legend>Are you satisfied with the teaching staff and their teaching methods?</legend>
-
-          <label for="vsat"><input id="vsat" type="radio" name="vs" value="very satisfied">Very Satisfied</label>
-          <label for="sat"><input id="sat" type="radio" name="s" value="satisfied">Satisfied</label>
-          <label for="dsat"><input id="dsat" type="radio" name="ds" value="dissatisfied">Dissatisfied</label>
-          <label for="vdsat"><input id="vdsat" type="radio" name="vds" value="very dissatisfied">Very dissatisfied</label>
-
-          <legend> How satisfied are you with the cleanliness and variety of food items available in the cafeteria?
-          </legend>
+        </fieldset>
+          <fieldset>
+            <legend>Are you satisfied with the teaching staff and their teaching methods?</legend>
 
           <label for="vsat"><input id="vsat" type="radio" name="vs" value="very satisfied">Very Satisfied</label>
           <label for="sat"><input id="sat" type="radio" name="s" value="satisfied">Satisfied</label>
           <label for="dsat"><input id="dsat" type="radio" name="ds" value="dissatisfied">Dissatisfied</label>
           <label for="vdsat"><input id="vdsat" type="radio" name="vds" value="very dissatisfied">Very dissatisfied</label>
-
-          <legend>Are Extracurricular activities in college good ?</legend>
+          </fieldset>
+          <fieldset>
+            <legend> How satisfied are you with the cleanliness and variety of food items available in the cafeteria?
+            </legend>
+  
+            <label for="vsat"><input id="vsat" type="radio" name="vs" value="very satisfied">Very Satisfied</label>
+            <label for="sat"><input id="sat" type="radio" name="s" value="satisfied">Satisfied</label>
+            <label for="dsat"><input id="dsat" type="radio" name="ds" value="dissatisfied">Dissatisfied</label>
+            <label for="vdsat"><input id="vdsat" type="radio" name="vds" value="very dissatisfied">Very dissatisfied</label>
+          </fieldset>
+          <fieldset>
+            <legend>Are Extracurricular activities in college good ?</legend>
 
           <label for="yes"><input id="yes" type="radio" name="y" value="yes">Yes</label>
           <label for="no"><input id="no" type="radio" name="n" value="no">No</label>
-        </feildset>
+          </fieldset>
+        <fieldset>
         <label for="class-env">
           <p>Check the contents below if you think they are proper </p>
           Class Environment :
@@ -80,6 +84,7 @@
           <textarea id="sug" name="sug" rows="3" cols="30" placeholder="To improve the current situation......"></textarea>
         </label>
         <input type="submit" value="Submit" />
+        </fieldset>
   </form>
 </body>
 
