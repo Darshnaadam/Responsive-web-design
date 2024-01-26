@@ -43,3 +43,20 @@ textarea {
   width: 100%;
   min-height: 2em;
 }
+
+input[type=checkbox] { 
+  vertical-align: middle; 
+  position: relative; 
+  bottom: 1px; 
+} 
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #69f0f7;
+  border-color: white;
+  min-width: 300px;
+}
