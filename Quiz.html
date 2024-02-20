@@ -46,13 +46,15 @@
                         <legend>HTML stands for Hyper Text Markup Language</legend>
               <ul class="answers-list">
                 <li>
-                  <label>
-                    <input type="radio">
+                  <label for="q1-a1">
+                    <input type="radio" id="q1-a1" value="True"  name="question1" />
+                    True
                   </label>
                 </li>
                 <li>
-                  <label>
-                    <input type="radio">
+                  <label for="q1-a2">
+                    <input type="radio" id="q1-a2"  value="False" name="question1" />
+                    False
                   </label>
                 </li>
               </ul>
@@ -64,13 +66,15 @@
                         <legend>HTML is a programming Language</legend>
               <ul class="answers-list">
                 <li>
-                  <label>
-                    <input type="radio">
+                  <label for="q2-a1">
+                    <input type="radio" id="q2-a1" value="True" name="question2" />
+                    True
                   </label>
                 </li>
                 <li>
-                  <label>
-                    <input type="radio">
+                  <label for="q2-a2">
+                    <input type="radio" id="q2-a2" value="False" name="question2" />
+                    False
                   </label>
                 </li>
               </ul>
@@ -79,6 +83,22 @@
             </section>
             <section role="region" aria-labelledby="css-questions">
                 <h2 id="css-questions">Css Questions</h2>
+                <div class="formrow">
+                  <div class="question-block">
+                    <label>Can the CSS margin property accept negative values?</label>
+                  </div>
+                  <div class="answer">
+                    <select required>
+                      <option value="">Select an option</option>
+                      <option value="yes">Yes</option>
+                      <option value="no">No</option>
+                    </select>
+                  </div>
+                  <div class="question-block">
+                    <label>Do you have any questions:</label>
+                  </div>
+                  <div class="answer"></div>
+                </div>
             </section>
         </form>
     </main>
