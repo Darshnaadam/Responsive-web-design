@@ -3,9 +3,6 @@ h1, p{
 }
 
 #img-div{
-    display: flex; 
-    justify-content: space-around; 
-    margin-bottom: 20px;
-    padding: 20px;
-    margin-right: 200px;
+   
 }
+
