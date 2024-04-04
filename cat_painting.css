@@ -20,3 +20,26 @@ body{
     background: linear-gradient(#5e5e5e 85%,#45454f 100%);
   }
 
+  .cat-left-ear{
+    transform: rotate(-45deg);
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    top: -26px;
+    left: -31px;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #5e5e5e;
+  }
+
+  .cat-right-ear {
+    position: absolute;
+    top: -26px;
+    left: 163px;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 70px solid #5e5e5e;
+    transform: rotate(45deg);
+    border-top-left-radius: 90px;
+    border-top-right-radius: 10px;
+  }
