@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="documentation.css">
 </head>
 <body>
+    <div class="main-body">
     <nav id="navbar">
         <header>Documentation Menu</header>
         <ul>
@@ -123,10 +124,58 @@
                     have 4 wheels, Speed Limit, Mileage range etc.
                     So here, Car is the class and wheels,
                     speed limits, mileage are their properties.
+                    <br><br>
+                    Here is a simple Example:
                 </p>
+
+                <code>
+                    #include <iostream>
+                        <br>
+                        using namespace std;
+                        <br><br>
+                        class Student {
+                            <br>
+                         public:
+                         <br>
+                          int id; // data member (also instance variable)
+                          <br>
+                          string name; // data member (also instance variable)
+                        <br><br>
+                          // member function
+                          <br>
+                          void print() {
+                            <br>
+                            cout << "ID: " << id << endl;
+                            <br>
+                            cout << "Name: " << name << endl;
+                            <br>
+                          }
+                          <br>
+                        };
+                        <br><br>
+                        int main() {
+                            <br>
+                          // create an object of Student
+                          <br>
+                          Student s1;
+                        <br><br>
+                          // access and set data members
+                          <br>
+                          s1.id = 201;
+                          <br>
+                          s1.name = "Sonoo Jaiswal";
+                        <br><br>
+                          // call member function
+                          <br>
+                          s1.print();
+                        <br><br>
+                          return 0;
+                          <br>
+                        }
+                </code>
             </article>
         </section>
-
+<br>
         <section class="main-section" id="Inheritance">
             <header>Inheritance</header>
             <article>
@@ -342,6 +391,7 @@
                 </p>
     </article>
 </section>
-    </main>
+</main>
+</div>
 </body>
 </html>
