@@ -30,7 +30,7 @@
             </ul>
         </nav>
         <main id="main-doc">
-            <section class="main-section" id="what_is_C++">
+            <section class="main-section" id="What_is_C++?">
                 <header>What is C++?</header>
                 <article>
                     <p>
@@ -126,7 +126,7 @@
                         So here, Car is the class and wheels,
                         speed limits, mileage are their properties.
                         <br><br>
-                        Here is a simple Example:
+                        Here is a simple example:
                     </p>
 
                     <code>
@@ -249,7 +249,7 @@
                         For example: Combining Hierarchical
                         inheritance and Multiple Inheritance.
                         <br><br>
-                        Here is a simple Example:
+                        Here is a simple example:
                     </p>
                     <code>
 #include <iostream>
@@ -348,7 +348,7 @@ int main()
                 </article>
             </section>
             <br>
-            
+
             <section class="main-section" id="Polymorphism">
                 <header>Polymorphism</header>
                 <article>
@@ -381,6 +381,71 @@ int main()
                         of polymorphism is achieved by
                         Function Overriding.
                     </p>
+                    <p>Here is a simple example:</p>
+                    <code>
+                    // Base class
+                    <br>
+class Animal {
+    <br>
+  public:
+  <br>
+    void animalSound() {
+        <br>
+      cout << "The animal makes a sound \n";
+      <br>
+    }
+    <br>
+};
+<br><br>
+// Derived class
+<br>
+class Pig : public Animal {
+    <br>
+  public:
+  <br>
+    void animalSound() {
+        <br>
+      cout << "The pig says: wee wee \n";
+      <br>
+    }
+    <br>
+};
+<br><br>
+// Derived class
+<br>
+class Dog : public Animal {
+    <br>
+  public:
+  <br>
+    void animalSound() {
+        <br>
+      cout << "The dog says: bow wow \n";
+      <br>
+    }
+    <br>
+};
+<br>
+<br>
+int main() {
+    <br>
+  Animal myAnimal;
+  <br>
+  Pig myPig;
+  <br>
+  Dog myDog;
+  <br>
+<br>
+  myAnimal.animalSound();
+  <br>
+  myPig.animalSound();
+  <br>
+  myDog.animalSound();
+  <br>
+  return 0;
+  <br>
+}
+                    </code>
+                    <br>
                 </article>
             </section>
 
@@ -439,6 +504,42 @@ int main()
                         as only important details are
                         provided to the user.
                     </p>
+                    <p>Here is a simple example:</p>
+
+                    <code>                       
+#include <iostream><br>
+using namespace std;<br>
+<br>
+class implementAbstraction {<br>
+private:<br>
+	int a, b;<br>
+<br>
+public:<br>
+	// method to set values of<br>
+	// private members<br>
+	void set(int x, int y)<br>
+	{<br>
+		a = x;<br>
+		b = y;<br>
+	}<br>
+<br>
+	void display()<br>
+	{<br>
+		cout << "a = " << a << endl;<br>
+		cout << "b = " << b << endl;<br>
+	}<br>
+};<br>
+<br>
+int main()<br>
+{<br>
+	implementAbstraction obj;<br>
+	obj.set(10, 20);<br>
+	obj.display();<br>
+	return 0;<br>
+}<br>
+
+                    </code>
+                    <br>
                 </article>
             </section>
 
@@ -487,10 +588,42 @@ int main()
                         can be implemented using Class
                         and access modifiers.
                     </p>
+                    <p>Here is a simple example:</p>
+
+                    <code>
+                        // Program to calculate the area of a rectangle<br>
+#include <iostream><br>
+using namespace std;<br>
+<br>
+class Rectangle {<br>
+  public:<br>
+    // Variables required for area calculation<br>
+    int length;<br>
+    int breadth;<br>
+<br>
+    // Constructor to initialize variables<br>
+    Rectangle(int len, int brth) : length(len), breadth(brth) {}<br>
+<br>
+    // Function to calculate area<br>
+    int getArea() {<br>
+      return length * breadth;<br>
+    }<br>
+};<br>
+<br>
+int main() {<br>
+  // Create object of Rectangle class<br>
+  Rectangle rect(8, 6);<br>
+<br>
+  // Call getArea() function<br>
+  cout << "Area = " << rect.getArea();<br>
+<br>
+  return 0;<br>
+}<br>
+                    </code>
+                    <br>
                 </article>
             </section>
         </main>
     </div>
 </body>
-
 </html>
